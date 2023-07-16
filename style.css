@@ -1,0 +1,558 @@
+@import url(../css/style.2.css);
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "nasim";
+  src: url(../font/nasim-web/nasim.ttf) format("ttf");
+  src: url(../font/nasim-web/nasim.woff) format("woff");
+}
+
+@font-face {
+  font-family: "vaziri";
+  src: url(../font/vazir-font-v16.1.0/Vazir-Bold.ttf) format("ttf");
+  src: url(../font/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff);
+}
+
+.header {
+  border-bottom: 1px solid rgba(145, 145, 145, 0.267);
+  width: 100%;
+  height: 65px;
+  box-shadow: 0 0 2px 0 rgb(200, 200, 200);
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+
+.main {
+  position: absolute;
+  top: 65px;
+  z-index: 0;
+}
+
+
+
+
+.divar {
+  display: inline-block;
+  float: right;
+  width: 53px;
+  height: 35px;
+  margin-right: 58px;
+  margin-top: 15px;
+}
+
+.khat {
+  display: inline-block;
+  float: right;
+  width: 1px;
+  height: 24px;
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.entekhab-shahr {
+  height: 38px;
+  display: inline-block;
+  float: right;
+  margin-top: 13px;
+  margin-right: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 19px;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+.entekhab-shahr:hover {
+  background-color: rgba(234, 234, 234, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.entekhab-shahr i {
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.entekhab-daste {
+  display: inline-block;
+  float: right;
+  height: 38px;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  margin-top: 13px;
+  margin-right: 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+
+.entekhab-daste:hover {
+  background-color: rgba(234, 234, 234, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.entekhab-daste i {
+  font-size: 12px;
+  margin-right: 13px;
+}
+
+.search {
+  display: inline-block;
+  float: right;
+  margin-top: 13px;
+  border-radius: 4px;
+  margin-right: 8px;
+  height: 38px;
+  background-color: rgba(234, 234, 234, 0.5);
+}
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.search i {
+  margin-right: 15px;
+  font-size: 15px;
+  color: rgb(134, 134, 134);
+  font-weight: 550;
+  margin-left: 0px;
+  padding-left: 0px;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+.search i:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.search input {
+  text-align: right;
+  background-color: rgba(243, 243, 243, 0);
+  border: none;
+  font-size: 19px;
+  padding-left: 265px;
+  padding-top: 6px;
+  padding-right: 0px;
+  margin-right: 0px;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+}
+.search input:focus {
+  outline: none;
+}
+
+.panel-karbari {
+  display: inline-block;
+  float: right;
+
+  height: 38px;
+  margin-right: 273px;
+  margin-top: 13px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+
+.panel-karbari:hover {
+  background-color: rgba(234, 234, 234, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.panel-karbari i {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chat {
+  display: inline-block;
+  float: right;
+  height: 38px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-top: 13px;
+  margin-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+
+.chat:hover {
+  background-color: rgba(234, 234, 234, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.chat i {
+  margin-left: 9px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.poshtibani {
+  display: inline-block;
+  float: right;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  margin-top: 13px;
+  margin-right: 7px;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+
+.poshtibani:hover {
+  background-color: rgba(234, 234, 234, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.sabt-agahi {
+  display: inline-block;
+  float: right;
+  height: 38px;
+  margin-top: 13px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 18px;
+  background-color: rgb(175, 33, 33);
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+
+.sabt-agahi:hover {
+  background-color: rgba(186, 37, 37, 0.9);
+}
+
+/* saidbar */
+/* .saidbar-container {
+  position: fixed;
+  right: 0;
+  top: 65px;
+  overflow-y: scroll;
+} */
+
+.saidbar {
+  height: 900px; /* mohem */
+  width: 340px;
+  /* border: 1px solid aqua; */
+  float: right;
+  display: inline-block;
+  text-align: right;
+
+}
+
+.saidbar-h2 {
+  font-size: 15px;
+  font-family: nasim;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  margin-right: 52px;
+}
+
+.saidbar-ul {
+  list-style-type: none;
+  width: 248px;
+  margin-right: 68px;
+  margin-top: 10px;
+  line-height: 250%;
+}
+
+.saidbar-ul li {
+  font-size: 17px;
+  font-family: nasim;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  text-align: right;
+}
+
+.li-icon {
+  /* font-size: 17px; */
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.saidbar ul li:hover {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.36s ease;
+}
+/* filter ha */
+
+.filter {
+  width: 248px;
+  height: 172px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  float: right;
+  margin-right: 56px;
+  margin-top: 15px;
+}
+
+.mahal {
+  width: 248px;
+  height: calc(100% / 3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.gheymat {
+  width: 248px;
+  height: calc(100% / 3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.vazeat {
+  cursor: pointer;
+}
+
+.meghdar-dahi {
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.filter-icon {
+  color: rgba(73, 71, 71, 0.5);
+  font-size: 14px;
+  margin-top: 23px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  float: right;
+  display: block;
+  width: 248px;
+  height: 269px;
+  margin-right: 56px;
+  margin-top: 1px;
+}
+
+.linkha {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: nasim;
+  font-size: 15px;
+}
+.linkha a {
+  margin-right: 12px;
+  cursor: pointer;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+.linkha a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.linkha-2 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.linkha-2 i {
+  margin-right: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: color 0.36s ease, background-color 0.36s ease;
+}
+.linkha-2 i:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.mojavezha {
+  margin-top: 15px;
+  margin-right: px;
+}
+.mojavezha img {
+  width: 260px;
+  height: 90px;
+  cursor: pointer;
+}
+
+/* content */
+
+.content {
+  width: 1120px;
+  /* border: 1px solid red; */
+  margin-left: 57px;
+  display: inline-block;
+}
+
+.content-h1 {
+  font-size: 15px;
+  font-family: nasim, Georgia, "Times New Roman", Times, serif;
+  color: rgba(0, 0, 0, 0.56);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.container {
+  width: 1122px;
+}
+
+.box {
+  height: 168px;
+  border: 1px solid rgba(0, 0, 0, 0.079);
+  border-radius: 4px;
+  float: left;
+  width: calc(1068px / 3);
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.box-img {
+  width: 135px;
+  height: 135px;
+  background-color: rgba(234, 234, 234, 1);
+  margin-top: 16px;
+  margin-left: 16px;
+  float: left;
+  border-radius: 4px;
+}
+
+.box-img img {
+  width: 135px;
+  height: 135px;
+  border-radius: 4px;
+}
+
+.box-img i {
+  font-size: 30px;
+  margin-top: 53px;
+  margin-left: 55px;
+  color: rgb(148, 144, 144);
+}
+
+.box-icon {
+  width: 20px;
+  height: 135px;
+  margin-top: 16px;
+  margin-left: 2px;
+  /* background-color: aqua; */
+  float: left;
+}
+
+.box-icon i {
+  font-size: 16px;
+  margin-top: 117px;
+  margin-left: 4px;
+  color: rgb(138, 136, 136);
+}
+
+.box-information {
+  width: 165px;
+  height: 135px;
+  /* background-color: greenyellow; */
+  float: left;
+  margin-top: 16px;
+  margin-left: 2px;
+  text-align: right;
+}
+
+.h3-div h3 {
+  height: 50px;
+  width: 165px;
+  font-family: vaziri;
+  font-size: 15px;
+  color: black;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background-color: blueviolet; */
+  direction: rtl;
+  letter-spacing: 0.5px;
+}
+.p-div p {
+  height: 23px;
+  width: 165px;
+  font-family: vaziri;
+  color: rgb(146, 144, 144);
+  font-size: 14px;
+  margin-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
+  /* background-color: greenyellow; */
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+
+.p2-div p {
+  height: 23px;
+  width: 165px;
+  font-family: vaziri;
+  font-size: 11px;
+  color: rgb(132, 131, 131);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
+  /* background-color: yellow; */
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+
+.p-ghymat p {
+  height: 23px;
+  width: 165px;
+  font-size: 13px;
+  font-family: vaziri;
+  color: rgb(132, 131, 131);
+  /* background-color: aqua; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+
+.p2-div {
+  margin-top: 3px;
+}
+
+.p-ghymat {
+  margin-top: 3px;
+}
